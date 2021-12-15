@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fontmin": "^0.9.9",
     "typescript": "^4.4.4"
   },
   "name": "wedding-invitation",
@@ -11,7 +12,8 @@
   "scripts": {
     "start:dev": "http-server",
     "build:dev": "tsc -p . -w",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "build:font": "node Utils/MinifyFont.js"
   },
   "author": "sOxOs",
   "license": "ISC"
